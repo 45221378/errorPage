@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>One Bid</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <script>
+        (function(win, doc) {
+            function change() {
+                doc.documentElement.style.fontSize = doc.documentElement.clientWidth / 750 * 75 + 'px';
+            }
+            change();
+            win.addEventListener('resize', change, false);
+        })(window, document);
+    </script>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <style>
+        .errorpage {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        .my-head {
+            width: 100%;
+            height: 1.306667rem;
+            z-index: 1000;
+        }
+        
+        .van-nav-bar--fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        
+        .errorpage .errorpage-main {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .errorpage .errorpage-main .error-img {
+            width: 8rem;
+            height: 6rem;
+        }
+        
+        .errorpage .errorpage-main .error-logo {
+            position: absolute;
+            width: 1.066667rem;
+            height: 1.066667rem;
+            top: 1.333333rem;
+            right: 1.333333rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="errorpage bgcolor bidbox">
+            <div class="my-head van-nav-bar van-nav-bar--fixed van-hairline--bottom null-head">
+                <div class="van-nav-bar__content">
+                    <div class="van-nav-bar__left">
+                    </div>
+                    <div class="van-nav-bar__title van-ellipsis"></div>
+                </div>
+            </div>
+            <div class="errorpage-main">
+                <img src="img/logo.74013baa.png" alt="" class="error-logo">
+                <img src="img/500.d54bcdc6.png" alt="" class="error-img">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
